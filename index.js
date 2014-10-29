@@ -11,12 +11,14 @@
 
 ;(function ( $, window, document, undefined ) {
 
-$.fn.form = function(fields, parameters) {
+module.exports = function(fields, parameters) {
+  var _module = module;
+
   var
     $allModules     = $(this),
 
-    settings        = $.extend(true, {}, $.fn.form.settings, parameters),
-    validation      = $.extend({}, $.fn.form.settings.defaults, fields),
+    settings        = $.extend(true, {}, _module.exports.settings, parameters),
+    validation      = $.extend({}, _module.exports.settings.defaults, fields),
 
     namespace       = settings.namespace,
     metadata        = settings.metadata,
@@ -625,7 +627,7 @@ $.fn.form = function(fields, parameters) {
   ;
 };
 
-$.fn.form.settings = {
+module.exports.settings = {
 
   name              : 'Form',
   namespace         : 'form',
@@ -792,4 +794,4 @@ $.fn.form.settings = {
 
 };
 
-})( jQuery, window , document );
+})( require("jquery"), window , document );
