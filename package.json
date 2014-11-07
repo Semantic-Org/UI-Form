@@ -1,6 +1,10 @@
 {
   "name": "semantic-ui-form",
+<<<<<<< HEAD
   "version": "1.0.0-beta",
+=======
+  "version": "1.0.0",
+>>>>>>> 9de2a4d5f2bda9a5a27753b7592207c9c4531112
   "title": "Semantic UI - Form",
   "description": "Single component release of form",
   "homepage": "http://www.semantic-ui.com",
@@ -13,9 +17,16 @@
   "bugs": {
     "url": "https://github.com/Semantic-Org/Semantic-UI/issues"
   },
+<<<<<<< HEAD
   "devDependencies": {},
   "dependencies": {
     "jquery": "x.x.x"
   },
+=======
+  "dependencies": {
+    "jquery": "x.x.x"
+  },
+  "devDependencies": {},
+>>>>>>> 9de2a4d5f2bda9a5a27753b7592207c9c4531112
   "main": "index.js"
 }

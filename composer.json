@@ -14,5 +14,9 @@
     "jquery": "x.x.x"
   },
   "main": "form.js",
+<<<<<<< HEAD
   "version": "1.0.0-beta"
+=======
+  "version": "1.0.0"
+>>>>>>> 9de2a4d5f2bda9a5a27753b7592207c9c4531112
 }
