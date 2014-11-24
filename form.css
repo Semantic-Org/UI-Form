@@ -30,7 +30,7 @@
 ---------------------*/
 
 .ui.form > p {
-  margin: 1em 0em;
+  margin: 0em 0em 1em;
 }
 
 /*--------------------
@@ -802,22 +802,22 @@
 
 /* Standard */
 .ui.small.form {
-  font-size: 0.875em;
+  font-size: 0.92857143rem;
 }
 
 /* Medium */
 .ui.form {
-  font-size: auto;
+  font-size: 1rem;
 }
 
 /* Large */
 .ui.large.form {
-  font-size: 1.125em;
+  font-size: 1.14285714rem;
 }
 
 /* Huge */
 .ui.huge.form {
-  font-size: 1.2em;
+  font-size: 1.42857143rem;
 }
 
 
