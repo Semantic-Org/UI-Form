@@ -1,7 +1,6 @@
-### Version 1.0.0 - XX XX, 2014
+### Version 1.0.0 - November 24, 2014
 
 - **Form** - Date field has been removed, use a ``ui icon input`` with a ``calendar icon`` instead
-- **Form** - Standard grids now have gutters on left and right of first and last column. ``ui fitted grid`` can be used to remove these margins
 - **General** - CSS animations now hint with will change properties to increase performance in supported browsers
 - **Button** - Now has compact form, used for fitting into tight spaces
 - **Form** - Form now has a success state which will automatically display success messages
