@@ -12,6 +12,23 @@
 - **Label** - Now has compact form, for fitting into tight spaces
 - **List** - Child lists can now be formatted to sit inside text content
 
+### Version 0.17.0 - May 9, 2014
+
+- **Form, Input** - Fixes ``ui input`` to work correctly inside ``inline field``
+
+### Version 0.16.0 - April 22, 2014
+
+- **Form** - Fields can now be aligned to a grid **Thanks seralex-vi**
+- **Checkbox** - Fixes issue where checkboxes with multiple line labels were appearing formatted incorrectly.
+
+### Version 0.15.3 - April 04, 2014
+
+- Fixes a variety of issues with malformed examples (thanks community)
+
+### Version 0.15.2 - Mar 28, 2014
+
+- **Menu** - Fixes formatting of attached segments with menus
+
 ### Version 0.15.0 - Mar 14, 2014
 
 - **Form** - Forms, Dropdowns, and Inputs now have matching padding size, and use 1em font size to appear same size as surrounding text
@@ -21,7 +38,7 @@
 
 - **Form** - Form fields with errors will now properly style dropdown elements **Thanks Musatov**
 
-### Version 0.13.1- Feb 28, 2014
+### Version 0.13.1 - Feb 28, 2014
 
 - **Checkbox** - Fixes checkbox appearance inside inverted forms
 - **Input** - Fixes ui input to inherit form sizing
