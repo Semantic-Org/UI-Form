@@ -1,3 +1,22 @@
+### Version 1.3.0 - December 17, 2014
+
+- **Form** - Form will no longer process validation rules on disabled fields
+- **Table** - Table now has a ``structured table`` type, which removes some formatting considerations to support complex table layouts with ``colspan`` and ``rowspan``
+- **Form** - Fixed positioning of horizontal field groups, aka ``fields`` for mobile.
+
+### Version 1.2.0 - December 08, 2014
+
+- **Form** - Form validation now has parameter ``optional`` which will only validate a field against a set of rules if the user does not leave it blank **Thanks DHNCarlos**
+- **Checkbox** - JS Checkbox now handles several variations of html. Labels can be before inputs, after, or not included at all. This should work better with server side form generation.
+- **Item/Card** - Default link formatting inside element simplified to avoid adjusting other nested ``ui`` link styles
+- **Form** - Fixes required checkbox asterisks formatting incorrect
+- Fixed documentation on dropdown actions, form field widths, form validation types, and many odds & ends
+
+### Version 1.1.0 - December 02, 2014
+
+- **Transition** - Transition's caching of final display state and animation existence now has improved performance.
+- **Icon** - ``remove icon`` is now formatted correctly when used as ``remove link icon``
+
 ### Version 1.0.0 - November 24, 2014
 
 - **Form** - Date field has been removed, use a ``ui icon input`` with a ``calendar icon`` instead
