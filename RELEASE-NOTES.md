@@ -1,3 +1,8 @@
+### Version 1.4.0 - December 22, 2014
+
+- **Form** - Form inputs without ``type`` specified are now formatted **Thanks PSyton**
+- **Menu** - Fix formatting of ``ui selection dropdown`` inside ``menu``
+
 ### Version 1.3.0 - December 17, 2014
 
 - **Form** - Form will no longer process validation rules on disabled fields
