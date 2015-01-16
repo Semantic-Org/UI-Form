@@ -1,3 +1,22 @@
+### Version 1.7.0 - January 14, 2015
+
+- **Site** - Form input highlighting color added (helps differentiate form colors with autocompleted fields). Default text highlighting color moved from highlighter yellow to a mellow blue.
+- **Popup** - Popup now uses `preserve: false` by default, this is slightly less performant but will reduce page clutter caused by leaving generated elements in the DOM
+- **Sidebar** - `setup layout` not occurs synchronously if you initialize a sidebar without the proper html. This makes sure calls to sidebar will occur correctly before the page is setup. A new setting `delaySetup` will override this, increasing performance.
+- **Modules** - Use of `$.proxy` swapped to native `function.call()` for performance gains across all modules
+
+### Version 1.6.0 - January 05, 2015
+
+- **Form** - ``ui search dropdown`` inside a form has incorrect focus style
+
+### Version 1.5.0 - December 30, 2014
+
+- **Progress** - Progress bars now display all intermediary percentage values when animating. Improved performance when progress bar is rapidly updated.
+- **Form** - Fixed (x) wide field not having correct bottom field margin when in ``fields`` group on tablet or mobile
+- **Form** - ``ui input`` now receives the same formatting as a normal input inside an ``inline field``
+- **Input** - Fixed bug when ``ui action input`` uses a ``ui icon button``, button was receiving `i.icon` formatting.
+- **List** - Fixed bug when using ``ui icon button`` or ``ui icon header`` causing element to receive icon formatting
+
 ### Version 1.4.0 - December 22, 2014
 
 - **Form** - Form inputs without ``type`` specified are now formatted **Thanks PSyton**
