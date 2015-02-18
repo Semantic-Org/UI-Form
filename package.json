@@ -1,6 +1,10 @@
 {
   "name": "semantic-ui-form",
+<<<<<<< HEAD
   "version": "1.0.0-beta",
+=======
+  "version": "1.7.2",
+>>>>>>> f0acaba0a567fe14c2c181b160e5527a4e349faf
   "title": "Semantic UI - Form",
   "description": "Single component release of form",
   "homepage": "http://www.semantic-ui.com",
@@ -8,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Semantic-Org/UI-Form.git"
+    "url": "https://github.com/Semantic-Org/UI-Form.git"
   },
   "bugs": {
     "url": "https://github.com/Semantic-Org/Semantic-UI/issues"

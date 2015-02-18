@@ -243,6 +243,10 @@ module.exports = function(fields, parameters) {
                 ;
               }
               if(!event.ctrlKey && key == keyCode.enter && $field.is(selector.input) && $field.not(selector.checkbox).length > 0 ) {
+<<<<<<< HEAD
+=======
+                module.debug('Enter key pressed, submitting form');
+>>>>>>> f0acaba0a567fe14c2c181b160e5527a4e349faf
                 $submit
                   .addClass(className.pressed)
                 ;
@@ -315,9 +319,12 @@ module.exports = function(fields, parameters) {
             else if( $field.filter('[name="' + identifier +'"]').length > 0 ) {
               return $field.filter('[name="' + identifier +'"]');
             }
+<<<<<<< HEAD
             else if( $field.filter('[name="' + identifier +'[]"]').length > 0 ) {
               return $field.filter('[name="' + identifier +'[]"]');
             }
+=======
+>>>>>>> f0acaba0a567fe14c2c181b160e5527a4e349faf
             else if( $field.filter('[data-' + metadata.validate + '="'+ identifier +'"]').length > 0 ) {
               return $field.filter('[data-' + metadata.validate + '="'+ identifier +'"]');
             }
@@ -904,6 +911,10 @@ module.exports.settings = {
 
   transition        : 'scale',
   duration          : 200,
+<<<<<<< HEAD
+=======
+
+>>>>>>> f0acaba0a567fe14c2c181b160e5527a4e349faf
 
   onValid           : function() {},
   onInvalid         : function() {},
@@ -916,6 +927,7 @@ module.exports.settings = {
   },
 
   selector : {
+<<<<<<< HEAD
     checkbox   : 'input[type="checkbox"], input[type="radio"]',
     clear      : '.clear',
     field      : 'input, textarea, select',
@@ -928,13 +940,28 @@ module.exports.settings = {
     submit     : '.submit',
     uiCheckbox : '.ui.checkbox',
     uiDropdown : '.ui.dropdown'
+=======
+    message : '.error.message',
+    field   : 'input, textarea, select',
+    group   : '.field',
+    checkbox: 'input[type="checkbox"], input[type="radio"]',
+    input   : 'input',
+    prompt  : '.prompt.label',
+    submit  : '.submit'
+>>>>>>> f0acaba0a567fe14c2c181b160e5527a4e349faf
   },
 
   className : {
     error   : 'error',
+<<<<<<< HEAD
     label   : 'ui prompt label',
     pressed : 'down',
     success : 'success'
+=======
+    success : 'success',
+    down    : 'down',
+    label   : 'ui prompt label'
+>>>>>>> f0acaba0a567fe14c2c181b160e5527a4e349faf
   },
 
   error: {
@@ -969,6 +996,7 @@ module.exports.settings = {
     // checkbox checked
     checked: function() {
       return ($(this).filter(':checked').length > 0);
+<<<<<<< HEAD
     },
 
     // value contains (text)
@@ -1054,9 +1082,99 @@ module.exports.settings = {
       return (matchingValue !== undefined)
         ? ( value.toString() == matchingValue.toString() )
         : false
+=======
+    },
+
+    // value contains (text)
+    contains: function(value, text) {
+      text = text.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+      return (value.search(text) !== -1);
+    },
+
+    // is most likely an email
+    email: function(value){
+      var
+        emailRegExp = new RegExp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", "i")
+>>>>>>> f0acaba0a567fe14c2c181b160e5527a4e349faf
+      ;
+      return emailRegExp.test(value);
+    },
+
+<<<<<<< HEAD
+=======
+    // is not empty or blank string
+    empty: function(value) {
+      return !(value === undefined || '' === value);
+    },
+
+    // is valid integer
+    integer: function(value, range) {
+      var
+        intRegExp = /^\-?\d+$/,
+        min,
+        max,
+        parts
+      ;
+      if (range === undefined || range === '' || range === '..') {
+        // do nothing
+      }
+      else if (range.indexOf('..') == -1) {
+        if (intRegExp.test(range)) {
+          min = max = range - 0;
+        }
+      }
+      else {
+        parts = range.split('..', 2);
+        if (intRegExp.test(parts[0])) {
+          min = parts[0] - 0;
+        }
+        if (intRegExp.test(parts[1])) {
+          max = parts[1] - 0;
+        }
+      }
+      return (
+        intRegExp.test(value) &&
+        (min === undefined || value >= min) &&
+        (max === undefined || value <= max)
+      );
+    },
+
+    // is exactly value
+    is: function(value, text) {
+      return (value == text);
+    },
+
+    // is at least string length
+    length: function(value, requiredLength) {
+      return (value !== undefined)
+        ? (value.length >= requiredLength)
+        : false
       ;
     },
 
+    // matches another field
+    match: function(value, fieldIdentifier) {
+      // use either id or name of field
+      var
+        $form = $(this),
+        matchingValue
+      ;
+      if($form.find('#' + fieldIdentifier).length > 0) {
+        matchingValue = $form.find('#' + fieldIdentifier).val();
+      }
+      else if($form.find('[name="' + fieldIdentifier +'"]').length > 0) {
+        matchingValue = $form.find('[name="' + fieldIdentifier + '"]').val();
+      }
+      else if( $form.find('[data-validate="'+ fieldIdentifier +'"]').length > 0 ) {
+        matchingValue = $form.find('[data-validate="'+ fieldIdentifier +'"]').val();
+      }
+      return (matchingValue !== undefined)
+        ? ( value.toString() == matchingValue.toString() )
+        : false
+      ;
+    },
+
+>>>>>>> f0acaba0a567fe14c2c181b160e5527a4e349faf
     // string length is less than max length
     maxLength: function(value, maxLength) {
       return (value !== undefined)
