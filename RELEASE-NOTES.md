@@ -1,5 +1,17 @@
-<<<<<<< HEAD
-=======
+### UI Changes
+
+- **Form** - Input rules now apply to `input[type="time"]`
+- **Form Validation** - `get values`, `set values` now support multiple select e.g. `field[]`
+- **Form Validation** - Dropdown and checkbox will now validate after interaction with `on: 'blur'`
+- **Form** - `info message` are no longer hidden by default inside `ui form`
+- **Form** - Lightened error dropdown hover text color to be more legible
+
+### Version 1.8.0 - January 23, 2015
+
+- **Form** - Form now has new methods `reset`, `clear`, `set value(s)`, and `read value(s)` for modifying and reading form data. Check docs for details on implementation. **Thanks @mktm**
+- **Form** - Form will now prevent browsers from resubmitting form repeatedly when keydown is pressed on input field.
+- **Button** - Fixes formatting for `disabled button` inside `ui buttons`
+
 ### Version 1.7.0 - January 14, 2015
 
 - **Site** - Form input highlighting color added (helps differentiate form colors with autocompleted fields). Default text highlighting color moved from highlighter yellow to a mellow blue.
@@ -185,4 +197,3 @@ Some updates to docs formatting
 ### Version 0.1.0 - Sep 25, 2013
 
 - Updated documentation for sidebar, transition, and form validation
->>>>>>> f0acaba0a567fe14c2c181b160e5527a4e349faf
