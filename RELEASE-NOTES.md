@@ -1,3 +1,9 @@
+### Version 1.10.0 - February 23, 2015
+
+- **Form Validation** - Adds `containsExactly`, `notExactly`, `isExactly` case sensitive validation rules, make `contains`, `not`, `is` case insensitive.
+- **Form Validation** - `contains` rule is now case insensitive
+- **Form Validation** - Validation messages no longer increase field height on `inline fields` like checkboxes after error appears
+
 ### UI Changes
 
 - **Form** - Input rules now apply to `input[type="time"]`
