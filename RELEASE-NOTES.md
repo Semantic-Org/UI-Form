@@ -1,3 +1,14 @@
+### Version 1.11.0 - March 3, 2015
+
+- **Form** - `<select>` now receive error formatting on `form error` **Thanks @davialexandre**
+- **Item ** - `img` inside of `ui item content` now do not receive size formatting by default
+- **Form** - Added `input[type="search"]` styles to `ui form`
+
+### Version 1.10.4 - February 28, 2015
+
+- **API** - Remove console error message when no API url is specified but element is a `form` (defaults to `form` action)
+- **API** - `api` check for [serialize object](https://github.com/macek/jquery-serialize-object) optional dependency no longer produces error when `serializeForm: true` and dependency is not found.
+
 ### Version 1.10.0 - February 23, 2015
 
 - **Form Validation** - Adds `containsExactly`, `notExactly`, `isExactly` case sensitive validation rules, make `contains`, `not`, `is` case insensitive.
