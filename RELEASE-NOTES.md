@@ -1,3 +1,7 @@
+### Version 1.11.5 - March 23, 2015
+
+- **Dropdown** - Dropdown `focus` color has been adjusted to match forms more closely
+
 ### Version 1.11.0 - March 3, 2015
 
 - **Form** - `<select>` now receive error formatting on `form error` **Thanks @davialexandre**
