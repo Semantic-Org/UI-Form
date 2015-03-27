@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 1.11.5 - Form Validation
+ * # Semantic UI 1.11.6 - Form Validation
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -13,9 +13,8 @@
 
 "use strict";
 
+var _module = module;
 module.exports = function(fields, parameters) {
-  var _module = module;
-
   var
     $allModules     = $(this),
 

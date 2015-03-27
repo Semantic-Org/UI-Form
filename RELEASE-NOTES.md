@@ -1,3 +1,7 @@
+### Version 1.11.6 - March 27, 2015
+
+- **Form** - Fix `grouped required` fields display issues **Thanks @palmsey**
+
 ### Version 1.11.5 - March 23, 2015
 
 - **Dropdown** - Dropdown `focus` color has been adjusted to match forms more closely
