@@ -1,3 +1,7 @@
+### Version 1.12.0 - April 13, 2015
+
+- **Sticky** - Adds sticky module from `2.x` branch. Sticky elements now use pub/sub with drastically improved performance. Sticky elements that do not fit on page will now scroll at the same speed as the page is scrolled instead of slower.
+
 ### Version 1.11.6 - March 27, 2015
 
 - **Form** - Fix `grouped required` fields display issues **Thanks @palmsey**
