@@ -1,3 +1,42 @@
+### Version 2.0.0 - June 30, 2015
+
+- **Form Validation** - Form validation now passes settings through a `fields` object. This is to make form initialization match other components. The previous syntax will continue to work but will produce deprecation notices in console
+- **Form** - `grouped inline field` no longer display horizontally. Use `inline field` instead for horizontal inline field groups.
+- **Tab** - `onTabInit` and `onTabLoad` have been renamed to `onFirstLoad` and `onLoad` respectively. This is to conform to the naming conventions of other modules (no self reference). Previous callbacks will continue to work but will produce deprecation notices in console. Two new callbacks `onVisible` and `onRequest` have been added as well.
+- **Form** - Forms now use `flexbox` for creating field groups. Inline fields now support `(x) wide` sizing using `flex`
+- **Popup** - Popup has been rewritten to drastically improve performance, especially when testing multiple positions.
+- **Transition** - Fallback javascript animations have been removed from UI components like dropdown and popup to increase performance. This removes need for expensive pseudo selectors like `:visible`, `:animated` and `:hidden` and reduces filesize.
+- **Form Validation** - Form validation now uses a single `settings` object like other modules. Using `(fields, settings)` will continue to work but will produce a deprecation notifications in `console`
+- **Form Validation** - Form validation now supports many new validation rules, including some specifically for use with multiple select values.
+- **Transition** - Transition code has been optimized to increase performance. 100% improvement on first animation, and 40% improvement on subsequent animations.
+- **Visibility** - Visibility and sticky now use a more performant [pub/sub pattern](http://davidwalsh.name/pubsub-javascript) that will only attach a single event to context `scroll`.
+- **Form** - Added a host of new styles for form fields autocompleted by your browser, including autocompleted error, and focus states
+- **Form** - Added placeholder color rules for IE, `ms-input-placeholder`
+- **Form** - Fix `errored field` dropdown keyboard selection color
+- **Form** - Adds form `success` state
+- **Form Validation** - Added `is valid` behavior, returns `true/false` if form is valid
+- **Form Validation** - Added `different[field]` rule which requires a field to be different than another field
+- **Form Validation** - `data-validate` now takes precedence over other validation matching schemes like `name` or `id`
+- **Form Validation** - New rules for matching against custom regular expressions
+- **Form Validation** - Form validation now has `minCount`, `maxCount`, and `exactCount` for validating multiple selections
+- **Popup** - Popup now defines a `transform-origin` so animations will be affected by the direction the element is placed
+- **Sidebar** - Improved animation performance through performance debugging. Sidebar now caches, width, height, rtl direction on load.
+- **Visibility/Sticky** - Visibility now uses pub/sub pattern to greatly improve scroll performance when attaching multiple events
+- **All Modules** - Performance logging now delays 500ms instead of 100ms for console logging to ensure all logs are captured in one group
+- **All Modules/Transition** - Transitions no longer use `rotateZ(0deg)` to trigger GPU display of visible state. This causes issues with `transform` creating new stacking context that can disrupt `z-index`.
+- **Dropdown** - Fixed `search dropdown` submitting parent form when enter shortcut pressed
+- **Form** - Form will no longer set a height for `textarea` using the `rows` property
+- **Form** - `inline fields` are now `1em` and do not match label's reduced size
+- **Form** - `field` inside `fields` no longer produce double sized margins.
+- **Form** - Form sizes and input sizes now inherit from `site.variables`
+- **Form Validation** - Fixed bug causing `match` rule not to work as expected.
+- **Form Validation** - Fixed `clear` and `reset` causing validation error to appear on checkbox if empty rule was set on checkbox.
+- **Form Validation** - Form validation now validates correctly on `<select>` change
+- **Form** - Fixed autocompleted `ui selection dropdown` having dropdown icon z-index issues
+- **Form/Input** - `ui labeled input` inside `form` will no longer escape column width. `ui fluid input` will now use input widths shorter than browser default.
+- **Form** - `set value` no longer automatically calls `validate form`
+- **Sidebar** - Sidebar `legacy` animations have been removed. 3D transforms are now available in all supported browsers.
+
 ### Version 1.12.0 - April 13, 2015
 
 - **Sticky** - Adds sticky module from `2.x` branch. Sticky elements now use pub/sub with drastically improved performance. Sticky elements that do not fit on page will now scroll at the same speed as the page is scrolled instead of slower.
