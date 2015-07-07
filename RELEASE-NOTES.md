@@ -1,4 +1,4 @@
-### Version 2.0.1 - June 30, 2015
+### Version 2.0.1 - July 6, 2015
 
 - **Form** - `reset` will no longer clear values if no default value is found [#2504](https://github.com/Semantic-Org/Semantic-UI/issues/2504)
 - **Form** - Clarified usage for `reset` in form docs [#2504](https://github.com/Semantic-Org/Semantic-UI/issues/2504)
