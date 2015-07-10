@@ -1,3 +1,7 @@
+### Version 2.0.3 - July 8, 2015
+
+- **Form** - URL regexp will now match now works correctly, and matches against non `http://` prefixed urls like `www.google.com`
+
 ### Version 2.0.1 - July 6, 2015
 
 - **Form** - `reset` will no longer clear values if no default value is found [#2504](https://github.com/Semantic-Org/Semantic-UI/issues/2504)
