@@ -1,3 +1,13 @@
+### Version 2.0.4 - July 17, 2015
+
+- **Form** - Added `doesntContain` and `doesntContainExactly` [#2638](https://github.com/Semantic-Org/Semantic-UI/issues/2638)
+- **Form** - Fixed issue with `minLength[1]` validation not behaving same as `minLength > 2` [#2636](https://github.com/Semantic-Org/Semantic-UI/issues/2636).
+- **Form** - Fixes errors when a field identifier is named `identifier` [#2629](https://github.com/Semantic-Org/Semantic-UI/issues/2629)
+- **Form** - Form fields will now error when a non-string identifier is used
+- **Formatting** - Fixed several source files that had `CR LF` (Windows) line endings [#2649](https://github.com/Semantic-Org/Semantic-UI/issues/2649)
+- **Input** - Fixed `left action input` displaying with incorrect `input` border radius inside `ui form` [#2638](https://github.com/Semantic-Org/Semantic-UI/issues/2638)
+- Added individual examples of all form validation rules
+
 ### Version 2.0.3 - July 8, 2015
 
 - **Form** - URL regexp will now match now works correctly, and matches against non `http://` prefixed urls like `www.google.com`
