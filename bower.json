@@ -24,6 +24,6 @@
     "http://semantic-ui.mit-license.org/"
   ],
   "main": [
-    "form.css","form.js"
+    "form.css"
   ]
 }
