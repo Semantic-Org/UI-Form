@@ -1,3 +1,7 @@
+### Version 2.1.2 - Sep 02, 2015
+
+- **Form Validation** - Fixes callbacks on `onSuccess` so as to not break backwards compatibility. #2945 #2944
+
 #### Features
 
 - **API** Added new setting `hideError`, defaults to `auto` (will automatically hide error for elements that are not forms). [#2586](https://github.com/Semantic-Org/Semantic-UI/issues/2586)
