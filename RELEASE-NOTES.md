@@ -1,3 +1,7 @@
+### Version 2.1.3 - Sep 03, 2015
+
+- **Input** - Fixes regression where `ui icon input` inside forms were not correct width [#2953](https://github.com/Semantic-Org/Semantic-UI/issues/2953)
+
 ### Version 2.1.2 - Sep 02, 2015
 
 - **Form Validation** - Fixes callbacks on `onSuccess` so as to not break backwards compatibility. #2945 #2944
