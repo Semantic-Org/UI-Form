@@ -1,3 +1,14 @@
+### Version 2.1.4 - Sep 13, 2015
+
+- **Form Validation** - Form validation now supports a brand new shorthand which is drastically simpler to specify [#2579](https://github.com/Semantic-Org/Semantic-UI/issues/2579)
+
+$('.ui.form')
+  .form({
+
+- **Form Validation** - `identifier` and `prompt` are now optional for all form validation rules. Default prompt values have been added for all rule types, and identifier will now automatically match on the named value for rule if no ID is specified. [#3001](https://github.com/Semantic-Org/Semantic-UI/issues/3001) [#2579](https://github.com/Semantic-Org/Semantic-UI/issues/2579)
+- **Form Validation** - All form prompts now support templates values, `{value}`, `{name}`,  `{ruleValue}`, and `{identifier}` [#3001](https://github.com/Semantic-Org/Semantic-UI/issues/3001)
+- **Form Validation** - Validation messages in `error message` group are now correctly removed when invalid field revalidates on blur
+
 ### Version 2.1.3 - Sep 03, 2015
 
 - **Input** - Fixes regression where `ui icon input` inside forms were not correct width [#2953](https://github.com/Semantic-Org/Semantic-UI/issues/2953)
