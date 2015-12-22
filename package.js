@@ -2,7 +2,7 @@
 Package.describe({
   name    : 'semantic:ui-form',
   summary : 'Semantic UI - Form: Single component release',
-  version : '2.1.6',
+  version : '2.1.7',
   git     : 'git://github.com/Semantic-Org/UI-Form.git',
 });
 

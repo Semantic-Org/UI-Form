@@ -1,3 +1,8 @@
+### Version 2.1.7 - Dec 19, 2015
+
+- **Form** - Fixed issue where text would turn transparent inside a `loading form` [#3122](https://github.com/Semantic-Org/Semantic-UI/issues/3122)
+- **Sidebar** - Sidebar no longer includes `transform` rules on child elements, this was causing layout issues in some cases (for example dropdowns in sidebars) [#3306](https://github.com/Semantic-Org/Semantic-UI/issues/3306)
+
 ### Version 2.1.5 - Nov 1, 2015
 
 - **Form** - Adds `equal width form` and `equal width fields` for simpler grouped fields
