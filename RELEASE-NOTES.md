@@ -1,3 +1,19 @@
+### Version 2.2.0 - June 26, 2016
+
+- **Dropdown** - Added new setting for search selection `hideAdditions` this will remove showing user additions inside the menu, making for a more intuitive adding process. Dropdowns now have a new state `empty` which will format an active dropdown with empty results. [#3791](https://github.com/Semantic-Org/Semantic-UI/issues/3791)
+- **Form Validation** - Added `depends` validation rule setting which will only validate a field if another specified field is not empty
+- **Form Validation / Dropdown** - Using "enter" key in a `search dropdown` could cause a form to be submitted [#3676](https://github.com/Semantic-Org/Semantic-UI/issues/3676)
+- **Form Validation** - Fix issue with some foreign email addresses with extended charsets causing email validation to fail [#3955](https://github.com/Semantic-Org/Semantic-UI/issues/3955) [#3755](https://github.com/Semantic-Org/Semantic-UI/issues/3755)
+- **Form Validation** - Revalidating a field `on: blur` could cause fields not yet interacted with to be validated [#3606](https://github.com/Semantic-Org/Semantic-UI/issues/3606)
+- **Form** - Fixed issue with `(x) fields` and `equal width` fields where middle rows would be slightly smaller because they include both left and right padding in % width. (Edges only have one side padding). Field groups now use negative margins instead.
+- **Form Validation** - Fixed issue where initializing form multiple times would not properly call `destroy` removing previous settings [#3798](https://github.com/Semantic-Org/Semantic-UI/issues/3798)
+- **Form** - Fix `equal width fields` sometimes not including right field spacing on mobile [#3913](https://github.com/Semantic-Org/Semantic-UI/issues/3913)
+- **Form** - Fixed issue where `inline` field was not being correctly inverted in color with `inverted form` [#4004](https://github.com/Semantic-Org/Semantic-UI/issues/4004) [#4005](https://github.com/Semantic-Org/Semantic-UI/issues/4005) **Thanks @tbracken**
+- **Form** - Grouped `fields` and `field` would cause different margin collapse, making `fields` include larger gaps between content [#3717](https://github.com/Semantic-Org/Semantic-UI/issues/3717)
+- **Form** - Remove deprecated `size()` method in `prompt` [#3655](https://github.com/Semantic-Org/Semantic-UI/issues/3655) **Thanks @SimonArdrey**
+- **Message** - Fixes `compact message` appearing as `block` when inside a `form` [#3343](https://github.com/Semantic-Org/Semantic-UI/issues/3343) **Thanks @bcroq**
+- **Form** - Added example of using custom rules with form
+
 ### Version 2.1.7 - Dec 19, 2015
 
 - **Form** - Fixed issue where text would turn transparent inside a `loading form` [#3122](https://github.com/Semantic-Org/Semantic-UI/issues/3122)
@@ -47,14 +63,14 @@ $('.ui.form')
 - **Form** - `disabled field(s)` now remove `pointer-events` allowing it to disable checkbox and dropdown functionality  [#555](https://github.com/Semantic-Org/Semantic-UI/issues/#555)
 - **Form** - Date input and other special input in chrome now are the same height as normal input (adds custom vendor shadow dom styling) [#2704](https://github.com/Semantic-Org/Semantic-UI/issues/2704)
 - **Form** - Form will no longer show messages that are empty in `error`, `warning`, or `success` state.
-- **API** - API now will use automatically use `form` action if no api event is specified now  when form is `stateContext` but not intialized element
+- **API** - API now will use automatically use `form` action if no api event is specified now  when form is `stateContext` but not initialized element
 - **Build Tools** - Fixes issue on `win` platform where packaged theme would not correctly update when using watch due to regExp not matching windows path separators.
 - **Form Validation** - Fixed issue with `get value(s)` where unchecked checkboxes would not correctly retrieve values
 - **Form** - Dropdown in `inline field` now use auto width instead of 100%
 
 ### Version 2.0.6 - July 22, 2015
 
-- **Form Validation** - In `2.0.4` `length` rules were corrected to match "exact length" and not "minimum length". This may have caused issues for those who were using this rule as min length previously. We've remedied any breaking changes introduced by by returning `length` to functioning as "minimum length" and added a new rule `exactLenght` for matching exact length. #2681
+- **Form Validation** - In `2.0.4` `length` rules were corrected to match "exact length" and not "minimum length". This may have caused issues for those who were using this rule as min length previously. We've remedied any breaking changes introduced by by returning `length` to functioning as "minimum length" and added a new rule `exactLength` for matching exact length. #2681
 
 ### Version 2.0.4 - July 17, 2015
 
