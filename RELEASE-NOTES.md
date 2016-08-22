@@ -1,3 +1,10 @@
+### Version 2.2.3 - August 21, 2016
+
+- **Form Validation** - Bracketed notation can now be omitted for rules, instead passing in bracketed values with the `value` parameter [#3313](https://github.com/Semantic-Org/Semantic-UI/issues/3313)
+- **Form/Segment** - Fix typo causing `pointer-events: none` no to work on `loading segment` and `loading form`  **Thanks @YamiOdymel and @ilanus** [#4403](https://github.com/Semantic-Org/Semantic-UI/issues/4403)
+- **Form** - Fixed issue where `disabled fields` with radio inputs would not correctly dim the label **Thanks @louwers** [#4366](https://github.com/Semantic-Org/Semantic-UI/issues/4366)
+- **Form** - `input` styles now apply to `type="file"` **thanks @coldfire79** [#4074](https://github.com/Semantic-Org/Semantic-UI/issues/4074)
+
 ### Version 2.2.2 - July 07, 2016
 
 - **Shape** - Fixed issue where shape was animating incorrectly when using jQuery 3.0, due to secret changes in how `width` are calculated on elements with `transform`
