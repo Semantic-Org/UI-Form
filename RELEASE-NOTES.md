@@ -1,3 +1,7 @@
+### Version 2.2.5 - October, 27, 2016
+
+-  **Sticky** - Adds `container` setting. This can be used to specify the offsetParent of the sticky element and avoid having to calculate on initialization (improving performance)
+
 ### Version 2.2.3 - August 21, 2016
 
 - **Form Validation** - Bracketed notation can now be omitted for rules, instead passing in bracketed values with the `value` parameter [#3313](https://github.com/Semantic-Org/Semantic-UI/issues/3313)
