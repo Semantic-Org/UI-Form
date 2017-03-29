@@ -1,3 +1,7 @@
+### Version 2.2.10 - March 28, 2017
+
+-**Form** - Credit card validation now no longer fails validation with dashed credit card values #5122 **Thanks @neokio**
+
 #### Form Validation
 If you are using form validation, previous to `2.2.8` calling `is valid` would trigger UI updates. This behavior now **no longer triggers UI updates**, and will only return a `boolean` whether form is valid.
 
