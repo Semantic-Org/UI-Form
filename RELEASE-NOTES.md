@@ -1,3 +1,10 @@
+### Version 2.2.11 - July 11, 2017
+
+- **Form Validation** - Fixed issue where radio was not being included in `onFailure` values if not set [#5064](https://github.com/Semantic-Org/Semantic-UI/issues/5064)
+- **Form Validation** - Added `add rule` `add field`, `remove rule`, `remove field` to programmatically and and remove validation rules from form validation [#4267](https://github.com/Semantic-Org/Semantic-UI/issues/4267) [#5253](https://github.com/Semantic-Org/Semantic-UI/issues/5253)
+- **Form** - Updated docs to include new examples of adding/removing validation rules
+- **Form Validation** - Added undocumented `add prompt` to list of behaviors
+
 ### Version 2.2.10 - March 28, 2017
 
 -**Form** - Credit card validation now no longer fails validation with dashed credit card values #5122 **Thanks @neokio**
