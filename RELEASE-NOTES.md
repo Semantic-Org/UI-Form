@@ -1,3 +1,7 @@
+### Version 2.3.0 - Feb 19, 2018
+
+- **Form Validation** - Fixes bug where `on: 'change'` would still show validation prompts on `blur` when using `inline: true` [#4423](https://github.com/Semantic-Org/Semantic-UI/issues/4423) **Thanks @avalanche1**
+
 ### Version 2.2.14 - Jan 29, 2018
 
 - **Form** - Fixes issue where radio checkbox would not return correct value from `get values` **Thanks @tincdev** [#5713](https://github.com/Semantic-Org/Semantic-UI/issues/5713) [#6043](https://github.com/Semantic-Org/Semantic-UI/issues/6043)

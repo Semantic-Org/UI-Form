@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.14 - Form Validation
+ * # Semantic UI 2.3.0 - Form Validation
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -359,7 +359,7 @@ module.exports = function(parameters) {
                   module.validate.field( validationRules );
                 }
               }
-              else if(settings.on == 'blur' || settings.on == 'change') {
+              else if(settings.on == 'blur') {
                 if(validationRules) {
                   module.validate.field( validationRules );
                 }
