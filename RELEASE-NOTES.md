@@ -1,4 +1,4 @@
-### Version 2.3.1 - Mar 19, 2018
+### Version 2.3.1 - Mar 18, 2018
 
 - **Form Validation** - Form can now return their validation prompt dynamically based on their current value. **Thanks @xDaizu** [#6016](https://github.com/Semantic-Org/Semantic-UI/issues/6016) [#3864](https://github.com/Semantic-Org/Semantic-UI/issues/3864)
 
