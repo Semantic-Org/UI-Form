@@ -1,3 +1,7 @@
+### Version 2.4.1 - Oct 13, 2018
+
+> If you are using the `semantic-ui-less` package with versions of LESS before 3.5 some `calc` values will not be computed correctly due to changes in variable interpolation. It is recommended that you upgrade to at least 3.5 to continue using new versions of SUI. For more information see [#6512](https://github.com/Semantic-Org/Semantic-UI/issues/6512)
+
 ### Version 2.3.1 - Mar 18, 2018
 
 - **Form Validation** - Form can now return their validation prompt dynamically based on their current value. **Thanks @xDaizu** [#6016](https://github.com/Semantic-Org/Semantic-UI/issues/6016) [#3864](https://github.com/Semantic-Org/Semantic-UI/issues/3864)
